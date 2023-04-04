@@ -26,6 +26,11 @@
             font-size: 33px;
         }
     }
+    .review{
+        &__text{
+            width: 700px;
+        }
+    }
 }
 @media(max-width: 767px){
     .promo{
@@ -35,6 +40,31 @@
             }
         }
     } 
+    .catalog{
+        &__tabs{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }
+    .review{
+        margin-bottom: 50px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__icon{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 40px;
+        }
+        &__text{
+            width: 460px;
+        }
+    }
 } 
 
 @media(max-width:575px){
@@ -87,5 +117,25 @@
         .button_submit{
             width: 262px;
         }
+    }
+    .catalog{
+        &__tab{
+            margin: 0 20px;
+        }
+    }
+    .review{
+        &__text{
+           width: 300px; 
+        }
+        
+    }
+    .footer{
+        &__info{
+            width: 200px;
+        }
+        &__address{
+            font-size: 15px;
+        }
+
     }
 }
