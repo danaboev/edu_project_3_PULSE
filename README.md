@@ -15,5 +15,5 @@ npm
 - gulo-cli
 - gulp-clean-css
 - gulp-autoprefixer
-slick_slider
+slick_slider(+)
 jQuery
