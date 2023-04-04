@@ -15,5 +15,9 @@ npm
 - gulo-cli
 - gulp-clean-css
 - gulp-autoprefixer
-slick_slider
+Слайдер
+- slick_slider(-)
+- tiny-slider
+- owl carosuel
+- carousel(bootsrap)
 jQuery
