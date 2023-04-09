@@ -66,31 +66,33 @@ $('.button_mini').each(function(i){
 	})
 });
 
-$('#consultation-form').validate(); 
-$('#consultation form').validate({
-	rules:{
-		name: {
-			required: true,
-			minlength: 2
-		  },
-		phone: "required",
-		email: {
-			required: true,
-			email: true
-		}	
-	},
-	messages: {
-		name: {
-			required: "Пожалуйста введите свое имя",
-			minlength: jQuery.validator.format("Введите {0} символа!")
-		  },
-		phone: "Пожалуйста введите свой телефон",
-		email: {
-		  required: "Пожалуйста введите свой почтовый адрес",
-		  email: "Неправильно введен почтовый адрес (Например: name@mail.ru)"
-		}
-	  } 
-}); 
-$('#order form').validate(); 
-
+function validateForms(form){
+	$(form).validate({
+		rules:{
+			name: {
+				required: true,
+				minlength: 2
+			  },
+			phone: "required",
+			email: {
+				required: true,
+				email: true
+			}	
+		},
+		messages: {
+			name: {
+				required: "Пожалуйста введите свое имя",
+				minlength: jQuery.validator.format("Введите {0} символа!")
+			  },
+			phone: "Пожалуйста введите свой телефон",
+			email: {
+			  required: "Пожалуйста введите свой почтовый адрес",
+			  email: "Неправильно введен почтовый адрес (Например: name@mail.ru)"
+			}
+		  } 
+	}); 
+};
+validateForms('#consultation-form');
+validateForms('#consultation form');
+validateForms('#order form');
 });
