@@ -69,7 +69,10 @@ $('.button_mini').each(function(i){
 $('#consultation-form').validate(); 
 $('#consultation form').validate({
 	rules:{
-		name: "required",
+		name: {
+			required: true,
+			minlength: 2
+		  },
 		phone: "required",
 		email: {
 			required: true,
@@ -77,7 +80,10 @@ $('#consultation form').validate({
 		}	
 	},
 	messages: {
-		name: "Пожалуйста введите свое имя",
+		name: {
+			required: "Пожалуйста введите свое имя",
+			minlength: jQuery.validator.format("Введите {0} символа!")
+		  },
 		phone: "Пожалуйста введите свой телефон",
 		email: {
 		  required: "Пожалуйста введите свой почтовый адрес",
