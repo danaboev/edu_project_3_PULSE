@@ -66,4 +66,8 @@ $('.button_mini').each(function(i){
 	})
 });
 
+$('#consultation-form').validate(); 
+$('#consultation form').validate(); 
+$('#order form').validate(); 
+
 });
