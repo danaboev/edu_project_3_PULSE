@@ -99,6 +99,8 @@ validateForms('#order form');
 //phone mask
 
 $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+//mailer
 $('form').submit(function(e){
 	e.preventDefault();
 
@@ -111,8 +113,8 @@ $('form').submit(function(e){
 		data: $(this).serialize()
 	}).done(function(){
 		$(this).find("input").val("");
-		$('#consultation, #oder').fadeOut();
-		$('.overlay, #thaks').fadeIn('slow');
+		$('#consultation, #order').fadeOut();
+		$('.overlay, #thanks').fadeIn('slow');
 
 		$('form').trigger('reset');
 	});
