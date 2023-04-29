@@ -14,10 +14,7 @@
 			margin: 0 auto;
 		}
 		&_animated{
-			animation-name:heartbeat ;
-			animation-duration: 1s;
-			animation-timing-function: ease;
-			animation-iteration-count: infinite;
+			animation: heartbeat 1s ease infinite;
 			&:hover{
 				animation-play-state: paused;
 			}
