@@ -130,4 +130,5 @@ $(window).scroll(function() {
 		$('.pageup').fadeOut();
 	}
 });
+	new WOW().init();
 });
