@@ -12,7 +12,7 @@ npm
 - sass
 - gulp-sass
 - gulp-rename
-- gulo-cli
+- gulp-cli
 - gulp-clean-css
 - gulp-autoprefixer
 Слайдер
@@ -21,3 +21,7 @@ npm
 - owl carosuel
 - carousel(bootsrap)
 jQuery
+animation
+- animation_css
+- animation_heart
+- animation_reviever
