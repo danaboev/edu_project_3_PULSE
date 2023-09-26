@@ -1,6 +1,18 @@
+body{
+	margin: 0;
+}
+*{
+	font-family: 'Museo Sans Cyrl', sans-serif ;
+}
+
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+	
 @import 'libs/animate';
 @import 'libs/slick';
-
 @import 'base/animations';
 @import "base/variables";
 @import "block/promo";
@@ -17,13 +29,3 @@
 @import 'block/footer';
 @import 'block/modal';
 @import 'block/pageup';
-
-
-*{
-	font-family: 'Museo Sans Cyrl', sans-serif ;
-}
-
-.container {
-	max-width: 950px;
-	margin: 0 auto;
-}
