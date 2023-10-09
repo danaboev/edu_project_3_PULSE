@@ -25,3 +25,6 @@ animation
 - animation_css
 - animation_heart
 - animation_reviever
+
+body-margin 0
+    -padding 0
