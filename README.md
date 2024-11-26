@@ -20,7 +20,7 @@ npm
 - tiny-slider
 - owl carosuel
 - carousel(bootsrap)
-jQuery
+jQuery (only carousel and animation)
 animation
 - animation_css
 - animation_heart
@@ -28,3 +28,4 @@ animation
 - media
 body-margin 0
     -padding 0
+  
